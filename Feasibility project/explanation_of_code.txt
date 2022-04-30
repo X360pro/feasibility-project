@@ -1,0 +1,31 @@
+Explanation of code:
+
+We iterate over each row using iterrows with for loop
+
+1) Save each character in a street_name variable until we encounter a digit.
+
+2) When we encounter a digit, it could be because of the two possible cases :
+   a) It would be part of the street name
+		OR
+   b) It would be part of the Country_code
+
+3) To check it
+We make a nested while loop which stores the next characters that we encounter in a
+"spcl_str" variable.
+
+We break the loop only if we encounter a space char " " or if the character is not a digit.
+
+Then we check the length of spcl_str.
+If it is 5, it means that we encountered continuous block of 5 digits which indicates that it is the Country_Code.
+We save it as country code and break the outer while loop. Then we go on to get the city name
+
+If its length is less than 5, it means that we encountered a different character and not a digit.
+This indicates that,
+spcl_str should be part of street_name.
+We continue with the outer while loop again.
+
+4) We run while loop until our counter's (i) value is less than length of adress an save it in city_name variable.
+
+
+
+

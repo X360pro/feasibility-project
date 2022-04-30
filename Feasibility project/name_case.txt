@@ -1,0 +1,6 @@
+Cases for Company names -> one word
+			   Contains "&" or "Company"
+			   or "co" or "co."
+			   or "LLC" or "INC" or "CORP" or
+			   "OFFICE" or "LTD"
+				
